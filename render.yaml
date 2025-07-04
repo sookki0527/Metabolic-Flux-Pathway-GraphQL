@@ -5,4 +5,4 @@ services:
     plan: free
     buildCommand: pip install -r ../requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
-    rootDir: Metabolic Flux Pathway-graphql/Backend/src
+    rootDir: Backend/src
