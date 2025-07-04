@@ -1,3 +1,11 @@
-# nixpacks.toml
 [phases.setup]
 nixPkgs = ["expat"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[build]
+workingDirectory = "Backend"
+
+[start]
+cmd = "uvicorn main:app --host 0.0.0.0 --port $PORT"
