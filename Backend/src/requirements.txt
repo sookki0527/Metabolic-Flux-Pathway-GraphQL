@@ -11,6 +11,7 @@ h11==0.16.0
 httpx==0.28.1
 networkx==3.1
 numpy==1.24.3
+python-libsbml
 pandas==1.5.3
 pydantic==1.10.22
 python-dotenv==1.1.1
