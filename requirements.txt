@@ -232,3 +232,5 @@ websocket-client==1.6.3
 Werkzeug==2.3.6
 widgetsnbextension==4.0.9
 wrapt==1.15.0
+setuptools>=58.0.0
+wheel
