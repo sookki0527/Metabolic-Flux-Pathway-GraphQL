@@ -1,12 +1,14 @@
 [phases.setup]
-nixPkgs = [  "expat"
+nixPkgs = [
+  "expat"
   "zlib"
   "libxml2"
   "libsbml"
   "glpk"
   "freetype"
   "libpng"
-  "fontconfig"]
+  "fontconfig"
+]
 
 [phases.install]
 cmds = ["pip install -r requirements.txt"]
