@@ -1,5 +1,12 @@
 [phases.setup]
-nixPkgs = ["expat"]
+nixPkgs = [  "expat"
+  "zlib"
+  "libxml2"
+  "libsbml"
+  "glpk"
+  "freetype"
+  "libpng"
+  "fontconfig"]
 
 [phases.install]
 cmds = ["pip install -r requirements.txt"]
@@ -8,4 +15,4 @@ cmds = ["pip install -r requirements.txt"]
 workingDirectory = "Backend"
 
 [start]
-cmd = "uvicorn main:app --host 0.0.0.0 --port 8000"
+cmd = "bash -c 'uvicorn main:app --host 0.0.0.0 --port $PORT'"
