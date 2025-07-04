@@ -9,8 +9,7 @@ COPY requirements.txt .
 COPY . .
 
 # 의존성 설치
-RUN pip install --upgrade pip \
-  && pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 # 포트 설정 (Railway는 ${PORT}로 설정)
 EXPOSE 8000
