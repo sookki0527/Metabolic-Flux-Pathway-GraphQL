@@ -7,7 +7,10 @@ WORKDIR /app
 # 필요한 파일 복사
 COPY requirements.txt .
 COPY . .
-
+RUN apt-get update && apt-get install -y \
+    libexpat1 \
+    libxml2 \
+    && rm -rf /var/lib/apt/lists/*
 # 의존성 설치
 RUN pip install -r requirements.txt
 
