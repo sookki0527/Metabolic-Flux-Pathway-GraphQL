@@ -11,6 +11,7 @@ import os
 def get_model_path():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     return os.path.join(base_dir, '..', 'database', 'iJO1366.json')
+    
 async def run_fba(info: Info, entry_id: str) -> List[FluxType]:
     
     model_path = get_model_path()
