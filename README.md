@@ -90,6 +90,38 @@ query GetReactionsByPathway($pathwayId: Int!) {
 ![image](https://github.com/user-attachments/assets/7bfce1e8-726c-4a53-907a-53309dfd0707)
 ![image](https://github.com/user-attachments/assets/1ff8c240-6ffe-4861-937d-d3f7c8045e6a)
 
+---
+## Folder Structure
+
+.
+├── Backend/
+│   └── src/
+│       ├── cobra_py/       # FBA logic with COBRApy
+│       ├── database/       # SQLAlchemy models & DB session
+│       ├── model/          # BiGG model JSON & loading utils
+│       ├── mutation/       # GraphQL mutations (e.g., runFBA)
+│       ├── network/        # Flux storing logic and Dijkstra shortest path algorithm
+│       ├── query/          # GraphQL queries
+│       ├── resolver/       # GraphQL resolver functions
+│       ├── schema/         # Strawberry GraphQL schema definitions
+│       ├── type/           # GraphQL types (ReactionType, FluxType, etc.)
+│       ├── main.py         # FastAPI app entrypoint
+│       ├── Dockerfile
+│       ├── requirements.txt
+│       ├── .nixpacks.toml
+│       └── .dockerignore
+│
+├── frontend/
+│   └── src/
+│       ├── assets/         # Images, static files
+│       ├── components/     # Reusable UI components
+│       ├── graphql/        # Apollo Client queries/mutations
+│       ├── pages/          # Page components (Home, FluxResults, etc.)
+│       ├── App.tsx         # Main React component
+│       ├── main.tsx        # React entrypoint
+│       └── index.css
+│
+
 
 
 
