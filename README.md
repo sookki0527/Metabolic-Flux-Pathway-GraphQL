@@ -49,6 +49,20 @@ model.objective = rxn_id
 solution = pfba(model)
 for reaction_id, flux_value in solution.fluxes.items():
     # Store each flux in the database using mutation
+    ...
+    
+    flux_type = FluxType(
+                    id=flux_model.id,
+                    value=flux_model.value,
+                    flux_links=[
+                        FluxReactionLinkType(
+                            flux_id=flux_model.id,
+                            reaction_id=reaction.id
+                        )
+                    ]
+                )
+                fluxInputs.append(flux_type)
+
 
  Dijkstra Algorithm (NetworkX)
 Source = reactant, Target = product (from selected reaction)
