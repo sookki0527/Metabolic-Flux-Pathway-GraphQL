@@ -84,11 +84,17 @@ query GetReactionsByPathway($pathwayId: Int!) {
   }
 }
 ```
-![image](https://github.com/user-attachments/assets/57456608-6d92-4143-8caa-4cdf43e5f926)
-![image](https://github.com/user-attachments/assets/8d83b739-ed99-4850-8337-b025f137db3c)
-![image](https://github.com/user-attachments/assets/a2e893d8-62c1-4634-a02c-14295c2e75fc)
-![image](https://github.com/user-attachments/assets/7bfce1e8-726c-4a53-907a-53309dfd0707)
-![image](https://github.com/user-attachments/assets/1ff8c240-6ffe-4861-937d-d3f7c8045e6a)
+## 🧪 Sample FBA Visualization
+
+<p align="center">
+  <img src="./images/Home.png" width="70%"/>
+  <img src="./images/SelectOF.png" width = "70%"/>
+  <img src="./images/SelectOP.png" width = "70%" />
+  <img src="./images/SelectOR.png" width = "70%" />
+  <img src="./images/FBAResult.png" width = "70%" />
+   <img src="./images/ShortestFLuxPath.png" width = "70%" />
+</p>
+
 
 ---
 ## Folder Structure
