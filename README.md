@@ -92,7 +92,7 @@ query GetReactionsByPathway($pathwayId: Int!) {
   <img src="./images/SelectOP.png" width = "70%" />
   <img src="./images/SelectOR.png" width = "70%" />
   <img src="./images/FBAResult.png" width = "70%" />
-   <img src="./images/ShortestFLuxPath.png" width = "70%" />
+   <img src="./images/ShortestFLuxPath.png" width = "50%" />
 </p>
 
 
