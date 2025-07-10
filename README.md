@@ -92,7 +92,7 @@ query GetReactionsByPathway($pathwayId: Int!) {
 
 ---
 ## Folder Structure
-
+```
 .
 ├── Backend/
 │   └── src/
@@ -123,5 +123,5 @@ query GetReactionsByPathway($pathwayId: Int!) {
 │
 
 
-
+```
 
